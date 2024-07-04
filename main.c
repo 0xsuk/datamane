@@ -20,7 +20,12 @@ void toss() {
 }
 
 int main() {
-  printf("TOssing a coin...\n");
+  printf("Who are you?\n> ");
+  char name[1024];
+  scanf("%s", name);
+  printf("Hello, %s!\n", name);
+  
+  printf("Tossing a coin...\n");
   
   srand(time(NULL) * getpid());
   
